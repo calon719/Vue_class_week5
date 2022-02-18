@@ -7,7 +7,7 @@ defineRule('email', VeeValidateRules['email']);
 defineRule('required', VeeValidateRules['required']);
 defineRule('min', VeeValidateRules['min']);
 
-VeeValidateI18n.loadLocaleFromURL('./../zh_TW.json');
+VeeValidateI18n.loadLocaleFromURL('./zh_TW.json');
 
 configure({
   generateMessage: VeeValidateI18n.localize('zh_TW'),
