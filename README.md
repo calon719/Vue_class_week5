@@ -1,4 +1,4 @@
-# Vue 直播班 week6
+# Vue 直播班 week 5
 - 串接客戶產品 api
 - 串接購物車 新增、修改、刪除 api
 - 串接建立訂單 api
