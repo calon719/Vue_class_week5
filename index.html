@@ -95,10 +95,10 @@
             </tr>
             <tr v-show="cartData.carts?.length" v-for="item in cartData.carts" :key="`cart_${item.id}`">
               <td class="text-center">
-                <button type=" button" class="btn btn-outline-danger btn-sm" @click="delProduct(item.id)"
-                  :disabled="isLoadingBtn.id === item.product.id && isLoadingBtn.status === 'delProduct'">
+                <button type=" button" class="btn btn-outline-danger btn-sm" @click="delProduct(item)"
+                  :disabled="isLoadingBtn.id === item.product_id && isLoadingBtn.status === 'delProduct'">
                   <i class="fas fa-spinner fa-pulse"
-                    v-if="isLoadingBtn.id === item.product.id && isLoadingBtn.status === 'delProduct'"></i>
+                    v-if="isLoadingBtn.id === item.product_id && isLoadingBtn.status === 'delProduct'"></i>
                   <span v-else>x</span>
                 </button>
               </td>

@@ -122,10 +122,10 @@ const app = Vue.createApp({
           this.isLoadingBtn.status = '';
         });
     },
-    delProduct(id) {
-      this.isLoadingBtn.id = id;
+    delProduct(product) {
+      this.isLoadingBtn.id = product.product_id;
       this.isLoadingBtn.status = 'delProduct';
-      axios.delete(`${api.baseUrl}/${api.cart_path}/${id}`)
+      axios.delete(`${api.baseUrl}/${api.cart_path}/${product.id}`)
         .then(res => {
           this.getCartData();
           alert(res.data.message);
